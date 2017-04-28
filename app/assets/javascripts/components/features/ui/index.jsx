@@ -136,6 +136,7 @@ class UI extends React.PureComponent {
 
     return (
       <div className='ui' ref={this.setRef}>
+         <div className='uiui' ref={this.setRef}>
         <TabsBar />
 
         {mountedColumns}
@@ -144,6 +145,7 @@ class UI extends React.PureComponent {
         <LoadingBarContainer className="loading-bar" />
         <ModalContainer />
         <UploadArea active={draggingOver} />
+      </div>
       </div>
     );
   }
